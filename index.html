@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🎓 Student Toolkit</h1>
+        <button onclick="toggleMode()">🌙</button>
+    </header>
+
+    <section class="container">
+        <div class="card">
+            <h2>📝 Notes</h2>
+            <textarea id="note" placeholder="Write here..."></textarea>
+            <button onclick="saveNote()">Save</button>
+        </div>
+
+        <div class="card">
+            <h2>📄 Resume</h2>
+            <input type="text" id="name" placeholder="Your Name">
+            <button onclick="updateResume()">Preview</button>
+            <p id="previewName"></p>
+        </div>
+
+        <div class="card">
+            <h2>🧮 Calculator</h2>
+            <input type="text" id="calcInput">
+            <button onclick="calculate()">=</button>
+            <p id="result"></p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

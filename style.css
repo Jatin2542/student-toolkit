@@ -1,0 +1,85 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background: linear-gradient(135deg, #0f172a, #1e3a8a);
+    color: white;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Container */
+.container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+/* Glass Card */
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 20px;
+    width: 300px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    transition: 0.4s;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+/* Hover Effect */
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+}
+
+/* Inputs */
+textarea, input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+/* Button */
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #38bdf8;
+    color: black;
+    font-weight: bold;
+}
+
+/* Dark Toggle */
+.dark {
+    background: white;
+    color: black;
+}
+.card {
+    animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
